@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1739271930002576304}
-  - component: {fileID: -4527136644432959631}
+  - component: {fileID: -3465407085300662707}
   - component: {fileID: 1739271930002576305}
   - component: {fileID: 1739271930002576318}
   - component: {fileID: 1739271930002576307}
@@ -35,7 +35,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-4527136644432959631
+--- !u!114 &-3465407085300662707
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,15 +44,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1739271930002576319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be7b5e80fe5f85b4db316b82be9fd631, type: 3}
+  m_Script: {fileID: 11500000, guid: c918347eb4d403345884c52b2ef3880d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPressed: 0
-  myrb: {fileID: 0}
   releaseTime: 0.2
-  HookPoint: {fileID: 0}
-  gc: {fileID: 0}
-  TrajectoryLineRenderer: {fileID: 0}
+  Gravity: 10
   ThrowSpeed: 3
 --- !u!212 &1739271930002576305
 SpriteRenderer:

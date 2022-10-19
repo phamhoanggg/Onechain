@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float releaseTime;
-    public float Gravity;
-    public float ThrowSpeed;
+    public float releaseTime = 0.2f;
+    public float ThrowSpeed = 3;
 
     private bool flying;
     private bool isPressed;
@@ -58,7 +57,7 @@ public class Bullet : MonoBehaviour
             TimeSinceThown += Time.fixedDeltaTime;
 
             float posX = ReleasePos.x + TimeSinceThown * birdVelocX;
-            float posY = ReleasePos.y + TimeSinceThown * birdVelocY - 0.5f * Gravity * Mathf.Pow(TimeSinceThown, 2);
+            float posY = ReleasePos.y + TimeSinceThown * birdVelocY - 0.5f * Physics2D.gravity.magnitude * Mathf.Pow(TimeSinceThown, 2);
             transform.position = new Vector3(posX, posY);
         }
     }

@@ -5,15 +5,15 @@ using System;
 
 public class PhysicBullet : MonoBehaviour
 {
-    public bool isPressed;
-    public Rigidbody2D myrb;
-    public float releaseTime;
-    public Transform HookPoint;
+    public float releaseTime = 0.2f;
+    public float ThrowSpeed = 3;
 
-    public GameController gc;
-    public LineRenderer TrajectoryLineRenderer;
-    public float ThrowSpeed;
+    private Transform HookPoint;
+    private GameController gc;
+    private LineRenderer TrajectoryLineRenderer;
+    private Rigidbody2D myrb;
     private bool flying;
+    private bool isPressed;
 
     // Start is called before the first frame update
     void Start()
